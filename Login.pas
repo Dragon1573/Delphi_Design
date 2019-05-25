@@ -29,6 +29,7 @@ procedure TForm1.Button1Click(Sender: TObject);
 begin
   if (Edit1.Text = 'admin') then
   begin
+    Application.CreateForm(TForm2, Form2);
     Form2.Show;
     Form2.WindowState := TWindowState.wsMaximized;
   end;

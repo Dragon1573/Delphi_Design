@@ -1,9 +1,9 @@
-object Form6: TForm6
+object Form5: TForm5
   Left = 0
   Top = 0
-  Caption = #25143#31821#25644#36801#21382#21490
-  ClientHeight = 426
-  ClientWidth = 695
+  Caption = #25913#21517#21382#21490
+  ClientHeight = 260
+  ClientWidth = 454
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,10 +17,11 @@ object Form6: TForm6
   object DBGrid1: TDBGrid
     Left = 0
     Top = 0
-    Width = 695
-    Height = 426
+    Width = 454
+    Height = 260
     Align = alClient
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -32,13 +33,14 @@ object Form6: TForm6
     Active = True
     Connection = DataModule1.ADOConnection1
     CursorType = ctStatic
-    TableName = 'Move'
+    LockType = ltReadOnly
+    TableName = 'Rename'
     Left = 16
-    Top = 376
+    Top = 136
   end
   object DataSource1: TDataSource
     DataSet = ADOTable1
     Left = 80
-    Top = 376
+    Top = 136
   end
 end

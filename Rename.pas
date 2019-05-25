@@ -1,4 +1,4 @@
-unit Move;
+unit Rename;
 
 interface
 
@@ -8,10 +8,10 @@ uses
   Vcl.DBGrids;
 
 type
-  TForm6 = class(TForm)
+  TForm5 = class(TForm)
     ADOTable1: TADOTable;
-    DataSource1: TDataSource;
     DBGrid1: TDBGrid;
+    DataSource1: TDataSource;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -20,13 +20,14 @@ type
   end;
 
 var
-  Form6: TForm6;
+  Form5: TForm5;
 
 implementation
   uses Connect;
+
 {$R *.dfm}
 
-procedure TForm6.FormCreate(Sender: TObject);
+procedure TForm5.FormCreate(Sender: TObject);
 begin
   ADOTable1.Active := True;
 end;
