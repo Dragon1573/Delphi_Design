@@ -1,7 +1,7 @@
 object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Form4'
+  Caption = #20851#20110
   ClientHeight = 335
   ClientWidth = 275
   Color = clBtnFace
@@ -6314,8 +6314,6 @@ object Form4: TForm4
           Value = 30.000000000000000000
         end>
       TabOrder = 0
-      ExplicitTop = 72
-      ExplicitHeight = 134
       DesignSize = (
         273
         93)

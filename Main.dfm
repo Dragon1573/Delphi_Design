@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = #25143#31821#31649#29702#31995#32479
   ClientHeight = 49
   ClientWidth = 209
   Color = clBtnFace
@@ -30,11 +30,16 @@ object Form2: TForm2
     object M1: TMenuItem
       Caption = #25143#31821#31649#29702'(&M)'
       object G1: TMenuItem
-        Caption = #25143#31821#36801#31227'(&G)'
+        Caption = #20449#24687#21464#26356'(&E)'
         OnClick = G1Click
       end
       object N1: TMenuItem
-        Caption = #22995#21517#21464#26356'(&R)'
+        Caption = #26366#29992#21517'(&R)'
+        OnClick = N1Click
+      end
+      object M2: TMenuItem
+        Caption = #36801#25143#35760#24405'(&M)'
+        OnClick = M2Click
       end
     end
     object A1: TMenuItem

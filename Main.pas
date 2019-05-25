@@ -15,11 +15,14 @@ type
     A1: TMenuItem;
     G1: TMenuItem;
     N1: TMenuItem;
+    M2: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure Q1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure G1Click(Sender: TObject);
     procedure A1Click(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure M2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +33,7 @@ var
   Form2: TForm2;
 
 implementation
-  uses Login, Move, About;
+  uses Login, Edit, Rename, Move, About;
 {$R *.dfm}
 
 procedure TForm2.A1Click(Sender: TObject);
@@ -51,6 +54,16 @@ end;
 procedure TForm2.G1Click(Sender: TObject);
 begin
   Form3.Show;
+end;
+
+procedure TForm2.M2Click(Sender: TObject);
+begin
+  Form6.Show;
+end;
+
+procedure TForm2.N1Click(Sender: TObject);
+begin
+  Form5.Show;
 end;
 
 procedure TForm2.Q1Click(Sender: TObject);

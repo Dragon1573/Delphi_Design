@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   BorderStyle = bsDialog
-  Caption = 'Form1'
+  Caption = #30331#24405#35748#35777
   ClientHeight = 146
   ClientWidth = 260
   Color = clBtnFace
