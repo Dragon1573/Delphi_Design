@@ -59,11 +59,15 @@ end;
 procedure TForm2.M2Click(Sender: TObject);
 begin
   Form6.Show;
+  Form6.ADOTable1.Close;
+  Form6.ADOTable1.Open;
 end;
 
 procedure TForm2.N1Click(Sender: TObject);
 begin
   Form5.Show;
+  Form5.ADOTable1.Close;
+  Form5.ADOTable1.Open;
 end;
 
 procedure TForm2.Q1Click(Sender: TObject);

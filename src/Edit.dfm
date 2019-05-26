@@ -20,7 +20,7 @@ object Form3: TForm3
     Top = 0
     Width = 789
     Height = 432
-    ActivePage = TabSheet4
+    ActivePage = TabSheet3
     Align = alClient
     TabOrder = 0
     object TabSheet3: TTabSheet
@@ -33,6 +33,7 @@ object Form3: TForm3
         Height = 404
         Align = alClient
         DataSource = DataSource1
+        ReadOnly = True
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -231,6 +232,7 @@ object Form3: TForm3
         Height = 404
         Align = alRight
         TabOrder = 1
+        ExplicitLeft = 461
         object Label1: TLabel
           Left = 14
           Top = 16
@@ -409,6 +411,7 @@ object Form3: TForm3
           Height = 402
           Align = alClient
           DataSource = DataSource1
+          ReadOnly = True
           TabOrder = 0
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
@@ -510,6 +513,7 @@ object Form3: TForm3
         Height = 352
         Align = alClient
         DataSource = DataSource1
+        ReadOnly = True
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
