@@ -15,193 +15,573 @@ object Form3: TForm3
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Panel2: TPanel
-    Left = 464
-    Top = 0
-    Width = 325
-    Height = 432
-    Align = alRight
-    TabOrder = 0
-    object Label1: TLabel
-      Left = 14
-      Top = 16
-      Width = 57
-      Height = 19
-      Caption = #22995#21517#65306
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label2: TLabel
-      Left = 16
-      Top = 65
-      Width = 57
-      Height = 19
-      Caption = #24615#21035#65306
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label3: TLabel
-      Left = 14
-      Top = 111
-      Width = 76
-      Height = 19
-      Caption = #36523#20221#35777#65306
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label4: TLabel
-      Left = 16
-      Top = 154
-      Width = 95
-      Height = 19
-      Caption = #25143#31821#22320#22336#65306
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label5: TLabel
-      Left = 16
-      Top = 202
-      Width = 95
-      Height = 19
-      Caption = #32852#31995#26041#24335#65306
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-    end
-    object Button1: TButton
-      Left = 136
-      Top = 248
-      Width = 75
-      Height = 25
-      Caption = #20462#25913
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 0
-    end
-    object DBEdit1: TDBEdit
-      Left = 112
-      Top = 18
-      Width = 193
-      Height = 27
-      DataField = 'Name'
-      DataSource = DataSource1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 1
-    end
-    object DBComboBox1: TDBComboBox
-      Left = 112
-      Top = 62
-      Width = 193
-      Height = 27
-      DataField = 'Sex'
-      DataSource = DataSource1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      Items.Strings = (
-        #30007
-        #22899)
-      ParentFont = False
-      TabOrder = 2
-    end
-    object DBEdit2: TDBEdit
-      Left = 112
-      Top = 108
-      Width = 193
-      Height = 27
-      DataField = 'ID_Num'
-      DataSource = DataSource1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-      ReadOnly = True
-      TabOrder = 3
-    end
-    object DBEdit3: TDBEdit
-      Left = 112
-      Top = 151
-      Width = 193
-      Height = 27
-      DataField = 'Address'
-      DataSource = DataSource1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 4
-    end
-    object DBEdit4: TDBEdit
-      Left = 112
-      Top = 196
-      Width = 193
-      Height = 27
-      DataField = 'Tel_No'
-      DataSource = DataSource1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = #23435#20307
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 5
-    end
-  end
-  object Panel1: TPanel
+  object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 464
+    Width = 789
     Height = 432
+    ActivePage = TabSheet4
     Align = alClient
-    TabOrder = 1
-    object DBGrid1: TDBGrid
-      Left = 1
-      Top = 1
-      Width = 462
-      Height = 430
-      Align = alClient
-      DataSource = DataSource1
-      ReadOnly = True
-      TabOrder = 0
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
+    TabOrder = 0
+    object TabSheet3: TTabSheet
+      Caption = #26032#25143#30331#35760
+      ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object DBGrid3: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 542
+        Height = 404
+        Align = alClient
+        DataSource = DataSource1
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object Panel5: TPanel
+        Left = 542
+        Top = 0
+        Width = 239
+        Height = 404
+        Align = alRight
+        Caption = 'Panel5'
+        ShowCaption = False
+        TabOrder = 1
+        object Label8: TLabel
+          Left = 14
+          Top = 72
+          Width = 57
+          Height = 19
+          Caption = #22995#21517#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 16
+          Top = 121
+          Width = 57
+          Height = 19
+          Caption = #24615#21035#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label10: TLabel
+          Left = 14
+          Top = 167
+          Width = 76
+          Height = 19
+          Caption = #36523#20221#35777#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label11: TLabel
+          Left = 11
+          Top = 210
+          Width = 95
+          Height = 19
+          Caption = #25143#31821#22320#22336#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label12: TLabel
+          Left = 11
+          Top = 255
+          Width = 95
+          Height = 19
+          Caption = #32852#31995#26041#24335#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Edit2: TEdit
+          Left = 104
+          Top = 69
+          Width = 121
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+        end
+        object Edit4: TEdit
+          Left = 104
+          Top = 164
+          Width = 121
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+        object Edit5: TEdit
+          Left = 104
+          Top = 207
+          Width = 121
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 2
+        end
+        object Edit6: TEdit
+          Left = 104
+          Top = 252
+          Width = 121
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 3
+        end
+        object Button3: TButton
+          Left = 72
+          Top = 296
+          Width = 75
+          Height = 25
+          Caption = #30331#35760
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 4
+          OnClick = Button3Click
+        end
+        object ComboBox2: TComboBox
+          Left = 104
+          Top = 118
+          Width = 121
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 5
+          Items.Strings = (
+            #30007
+            #22899)
+        end
+      end
+    end
+    object TabSheet1: TTabSheet
+      Caption = #20449#24687#21464#26356
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 456
+        Height = 404
+        Align = alClient
+        TabOrder = 0
+        object DBGrid1: TDBGrid
+          Left = 1
+          Top = 1
+          Width = 454
+          Height = 402
+          Align = alClient
+          DataSource = DataSource1
+          ReadOnly = True
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+      end
+      object Panel2: TPanel
+        Left = 456
+        Top = 0
+        Width = 325
+        Height = 404
+        Align = alRight
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 14
+          Top = 16
+          Width = 57
+          Height = 19
+          Caption = #22995#21517#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label2: TLabel
+          Left = 16
+          Top = 65
+          Width = 57
+          Height = 19
+          Caption = #24615#21035#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 14
+          Top = 111
+          Width = 76
+          Height = 19
+          Caption = #36523#20221#35777#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label4: TLabel
+          Left = 11
+          Top = 154
+          Width = 95
+          Height = 19
+          Caption = #25143#31821#22320#22336#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label5: TLabel
+          Left = 11
+          Top = 199
+          Width = 95
+          Height = 19
+          Caption = #32852#31995#26041#24335#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Button1: TButton
+          Left = 136
+          Top = 248
+          Width = 75
+          Height = 25
+          Caption = #20462#25913
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          OnClick = Button1Click
+        end
+        object DBEdit1: TDBEdit
+          Left = 112
+          Top = 18
+          Width = 193
+          Height = 27
+          DataField = 'Name'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+        object DBComboBox1: TDBComboBox
+          Left = 112
+          Top = 62
+          Width = 193
+          Height = 27
+          DataField = 'Sex'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          Items.Strings = (
+            #30007
+            #22899)
+          ParentFont = False
+          TabOrder = 2
+        end
+        object DBEdit2: TDBEdit
+          Left = 112
+          Top = 108
+          Width = 193
+          Height = 27
+          DataField = 'ID_Num'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object DBEdit3: TDBEdit
+          Left = 112
+          Top = 151
+          Width = 193
+          Height = 27
+          DataField = 'Address'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 4
+        end
+        object DBEdit4: TDBEdit
+          Left = 112
+          Top = 196
+          Width = 193
+          Height = 27
+          DataField = 'Tel_No'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 5
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = #20449#24687#26597#35810
+      ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Panel3: TPanel
+        Left = 0
+        Top = 0
+        Width = 512
+        Height = 404
+        Align = alClient
+        TabOrder = 0
+        object DBGrid2: TDBGrid
+          Left = 1
+          Top = 1
+          Width = 510
+          Height = 402
+          Align = alClient
+          DataSource = DataSource1
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+      end
+      object Panel4: TPanel
+        Left = 512
+        Top = 0
+        Width = 269
+        Height = 404
+        Align = alRight
+        ShowCaption = False
+        TabOrder = 1
+        object Label6: TLabel
+          Left = 11
+          Top = 149
+          Width = 95
+          Height = 19
+          Caption = #26597#35810#26465#20214#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label7: TLabel
+          Left = 30
+          Top = 190
+          Width = 76
+          Height = 19
+          Caption = #20851#38190#23383#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object ComboBox1: TComboBox
+          Left = 112
+          Top = 146
+          Width = 145
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          Items.Strings = (
+            #22995#21517
+            #24615#21035
+            #36523#20221#35777#21495
+            #25143#31821#22320#22336
+            #32852#31995#26041#24335)
+        end
+        object Edit1: TEdit
+          Left = 112
+          Top = 187
+          Width = 145
+          Height = 27
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+        end
+        object Button2: TButton
+          Left = 96
+          Top = 232
+          Width = 75
+          Height = 25
+          Caption = #26597#35810
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 2
+          OnClick = Button2Click
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = #25143#31821#27880#38144
+      ImageIndex = 3
+      object DBGrid4: TDBGrid
+        Left = 0
+        Top = 0
+        Width = 781
+        Height = 352
+        Align = alClient
+        DataSource = DataSource1
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 352
+        Width = 781
+        Height = 52
+        Align = alBottom
+        Caption = 'Panel6'
+        ShowCaption = False
+        TabOrder = 1
+        object Label13: TLabel
+          Left = 190
+          Top = 16
+          Width = 76
+          Height = 19
+          Caption = #36523#20221#35777#65306
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+        end
+        object DBEdit5: TDBEdit
+          Left = 272
+          Top = 14
+          Width = 193
+          Height = 27
+          DataField = 'ID_Num'
+          DataSource = DataSource1
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+        end
+        object Button4: TButton
+          Left = 480
+          Top = 16
+          Width = 75
+          Height = 25
+          Caption = #27880#38144
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+          OnClick = Button4Click
+        end
+      end
     end
   end
   object ADOTable1: TADOTable
@@ -215,6 +595,14 @@ object Form3: TForm3
   object DataSource1: TDataSource
     DataSet = ADOTable1
     Left = 192
+    Top = 312
+  end
+  object ADOQuery1: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    CursorType = ctDynamic
+    DataSource = DataSource1
+    Parameters = <>
+    Left = 264
     Top = 312
   end
 end
