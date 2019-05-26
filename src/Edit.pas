@@ -90,11 +90,17 @@ begin
     ' WHERE [ID_Num] = ' + DBEdit2.Text);
   ADOQuery1.SQL.Add('UPDATE [People] SET [Date] = GETDATE() WHERE [ID_Num] = '
     + DBEdit2.Text);
+  ADOQuery1.SQL.Add('INSERT INTO [Rename] VALUES (' + DBEdit2.Text + ', '''
+    + DBEdit1.Text + ''', GETDATE())');
+  ADOQuery1.SQL.Add('INSERT INTO [Move] VALUES (' + DBEdit2.Text + ', '''
+    + DBEdit3.Text + ''', GETDATE())');
   ADOQuery1.ExecSQL;
   ADOQuery1.Close;
   ADOQuery1.SQL.Clear;
   ADOQuery1.SQL.Add('SELECT * FROM [People]');
   ADOQuery1.Open;
+  ADOTable1.Close;
+  ADOTable1.Open;
 end;
 
 procedure TForm3.Button2Click(Sender: TObject);
@@ -123,9 +129,15 @@ begin
   else if (ComboBox1.Text = '联系方式') then
   begin
     ADOQuery1.SQL.Add('SELECT * FROM [People] WHERE [Tel_No] = ' + Edit1.Text);
+  end
+  else
+  begin
+    ADOQuery1.SQL.Add('SELECT * FROM [People]');
   end;
   showMessage(ADOQuery1.SQL.Text);
-  ADOQuery1.Open;
+  ADOQuery1.ExecSQL;
+  ADOTable1.Close;
+  ADOTable1.Open;
   Edit1.Text := '';
 end;
 
@@ -134,10 +146,14 @@ begin
   ADOQuery1.Close;
   ADOQuery1.SQL.Clear;
   ADOQuery1.SQL.Add(
-    'INSERT INTO [People] VALUES(''' + Edit2.Text + ''', ''' + ComboBox2.Text
+    'INSERT INTO [People] VALUES (''' + Edit2.Text + ''', ''' + ComboBox2.Text
       + ''', ' + Edit4.Text + ', ''' + Edit5.Text + ''', ' + Edit6.Text
       + ', GETDATE())'
   );
+  ADOQuery1.SQL.Add('INSERT INTO [Rename] VALUES (' + Edit4.Text + ', '''
+    + Edit2.Text + ''', GETDATE())');
+  ADOQuery1.SQL.Add('INSERT INTO [Move] VALUES (' + Edit4.Text + ', '''
+    + Edit5.Text + ''', GETDATE())');
   ADOQuery1.ExecSQL;
   ADOQuery1.Close;
   ADOQuery1.SQL.Clear;
@@ -151,6 +167,8 @@ procedure TForm3.Button4Click(Sender: TObject);
 begin
   ADOQuery1.Close;
   ADOQuery1.SQL.Clear;
+  ADOQuery1.SQL.Add('DELETE FROM [Rename] WHERE [ID_Num] = ' + DBEdit5.Text);
+  ADOQuery1.SQL.Add('DELETE FROM [Move] WHERE [ID_Num] = ' + DBEdit5.Text);
   ADOQuery1.SQL.Add('DELETE FROM [People] WHERE [ID_Num] = ' + DBEdit5.Text);
   ADOQuery1.ExecSQL;
   ADOQuery1.Close;

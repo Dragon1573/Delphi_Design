@@ -21,6 +21,7 @@ object Form6: TForm6
     Height = 426
     Align = alClient
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
