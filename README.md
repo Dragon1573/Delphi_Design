@@ -116,7 +116,7 @@
 
 &emsp;&emsp;由于项目需要连接数据库程序，而不同设备的数据库配置可能存在差异，有别于直接连接到库文件的[Microsoft Office Access](https://products.office.com/zh-cn/access)、[SQLite](https://sqlite.org/index.html)。由我使用Windows-32bit Release模式编译发布的可执行程序并不通用，所以请根据以下步骤编译运行：
 
-1. 项目提供了[`Citizens_Log.ldf`](db/Citizens_Log.ldf)数据库日志文件和[`Citizens.mdf`](src/Citizens.mdf)数据库主文件，这2个文件仅支持Microsoft SQL Server 2017及以上版本数据库的附加。对于之前的版本，项目额外提供了[`script.sql`](src/script.sql)以实现数据库导入工作，此脚本最低兼容SQL Server 2008。脚本仅涉及架构，没有任何数据。如有测试需要，请在运行此脚本生成数据库后自行添加备用数据。
+1. 项目提供了[`Citizens_log.ldf`](db/Citizens_log.ldf)数据库日志文件和[`Citizens.mdf`](db/Citizens.mdf)数据库主文件，这2个文件仅支持Microsoft SQL Server 2017及以上版本数据库的附加。对于之前的版本，项目额外提供了[`script.sql`](db/script.sql)以实现数据库导入工作，此脚本最低兼容SQL Server 2008。脚本仅涉及架构，没有任何数据。如有测试需要，请在运行此脚本生成数据库后自行添加备用数据。
 
 2. 使用Delphi打开代码库中的[`Manager.dproj`](src/Manager.dproj)，定位至[`Connect.pas`](src/Connect.pas)文件的窗体设计视图。
 
