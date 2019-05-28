@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg, Vcl.ExtCtrls;
 
 type
   TForm2 = class(TForm)
@@ -16,6 +17,11 @@ type
     G1: TMenuItem;
     N1: TMenuItem;
     M2: TMenuItem;
+    Image1: TImage;
+    Label1: TLabel;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    B1: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure Q1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -23,6 +29,7 @@ type
     procedure A1Click(Sender: TObject);
     procedure N1Click(Sender: TObject);
     procedure M2Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -68,6 +75,14 @@ begin
   Form5.Show;
   Form5.ADOTable1.Close;
   Form5.ADOTable1.Open;
+end;
+
+procedure TForm2.N3Click(Sender: TObject);
+begin
+  Form2.Hide;
+  Label1.Caption := '';
+  Form1.Show;
+  Form1.SetFocus;
 end;
 
 procedure TForm2.Q1Click(Sender: TObject);
