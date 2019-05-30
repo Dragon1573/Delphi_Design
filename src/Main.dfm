@@ -15683,7 +15683,7 @@ object Form2: TForm2
     Font.Name = #38582#20070
     Font.Style = []
     ParentFont = False
-    ExplicitTop = -6
+    ExplicitWidth = 24
   end
   object MainMenu1: TMainMenu
     Left = 16
@@ -15692,6 +15692,7 @@ object Form2: TForm2
       object B1: TMenuItem
         Caption = #25968#25454#23481#28798'(&B)'
         ShortCut = 16450
+        OnClick = B1Click
       end
       object N2: TMenuItem
         Caption = '-'

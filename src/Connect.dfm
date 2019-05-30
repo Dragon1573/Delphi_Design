@@ -1,8 +1,9 @@
 object DataModule1: TDataModule1
   OldCreateOrder = False
   Height = 68
-  Width = 100
+  Width = 188
   object ADOConnection1: TADOConnection
+    Connected = True
     ConnectionString = 
       'Provider=SQLNCLI11.1;Integrated Security=SSPI;Persist Security I' +
       'nfo=False;User ID="";Initial Catalog=Manager;Data Source=LEGEND1' +
@@ -13,6 +14,7 @@ object DataModule1: TDataModule1
       ' Server Certificate=False;Server SPN="";Application Intent=READW' +
       'RITE'
     DefaultDatabase = 'Manager'
+    LoginPrompt = False
     Mode = cmReadWrite
     Provider = 'SQLNCLI11.1'
     Left = 32

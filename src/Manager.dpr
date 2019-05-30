@@ -8,7 +8,8 @@ uses
   About in 'About.pas' {Form4},
   Rename in 'Rename.pas' {Form5},
   Connect in 'Connect.pas' {DataModule1: TDataModule},
-  Move in 'Move.pas' {Form6};
+  Move in 'Move.pas' {Form6},
+  Backup in 'Backup.pas' {Form7};
 
 {$R *.res}
 
@@ -21,5 +22,6 @@ begin
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
   Application.Run;
 end.

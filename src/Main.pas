@@ -30,6 +30,8 @@ type
     procedure N1Click(Sender: TObject);
     procedure M2Click(Sender: TObject);
     procedure N3Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
+    procedure B1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,12 +42,20 @@ var
   Form2: TForm2;
 
 implementation
-  uses Login, Edit, Rename, Move, About;
+  uses Login, Edit, Rename, Move, About, Backup, Connect;
+
 {$R *.dfm}
 
 procedure TForm2.A1Click(Sender: TObject);
 begin
   Form4.Show;
+end;
+
+procedure TForm2.B1Click(Sender: TObject);
+begin
+  Form7.Show;
+  Form7.FileListBox1.Directory := 'D:\Program_Files_(x64)\Git\Repos\Delphi_Design\bak';
+  Form7.FileListBox1.Update;
 end;
 
 procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -83,6 +93,14 @@ begin
   Label1.Caption := '';
   Form1.Show;
   Form1.SetFocus;
+end;
+
+procedure TForm2.N5Click(Sender: TObject);
+begin
+  Form7.Show;
+  DataModule1.ADOConnection1.Close;
+  Form7.FileListBox1.Directory := 'D:\Program_Files_(x64)\Git\Repos\Delphi_Design\bak';
+  Form7.FileListBox1.Update;
 end;
 
 procedure TForm2.Q1Click(Sender: TObject);
